@@ -99,7 +99,6 @@ client.on('guildMemberAdd', async member => {
       const processedMessageData = {
           ...messageData,
           // REMOVE BELOW ATTRIBUTE IN ORDER TO LOAD MESSAGE.JSON INFO 
-          thumbnail: member.guild.iconURL(),
           authorName: member.displayName,
           authorURL: member.user.displayAvatarURL(),
           authorIcon: member.user.displayAvatarURL()
